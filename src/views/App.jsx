@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (windowSize.w < 500)
+    if (windowSize.w < 1024)
       setIsMobile(true);
     else
       setIsMobile(false)
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className='font-sora max-w-screen-xl text-base mx-auto px-8 bg-slate-200'>
-      <Header />
+      <Header  />
       <Main />
       <Footer />
     </div>

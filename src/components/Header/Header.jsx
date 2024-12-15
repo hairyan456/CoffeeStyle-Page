@@ -1,14 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const menuRef = useRef(null);
+
+    const handleToggle = () => {
+        setMenuOpen((prev) => !prev);
+
+    };
+
+    const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setMenuOpen(false);
+
+        }
+    };
+
+    useEffect(() => {
+        if (menuOpen)
+            document.addEventListener('mousedown', handleClickOutside);
+        else
+            document.removeEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [menuOpen]);
+
     return (
-        <header className='py-6 mx-10 '>
-            <nav className='flex flex-row justify-between items-center font-light '>
+        <header className='p-6 mx-auto'>
+            <nav ref={menuRef} className='flex flex-row justify-between items-center relative'>
                 <div className='logo basis-2/6 text-center text-lg font-semibold cursor-pointer'>
                     CoffeeStyle
                 </div>
-                <ul className='basis-3/6 flex items-center justify-end gap-8 uppercase text-sm text-gray-500 font-medium'>
-                    <li className='ct-top-menu-item'>
+
+                <ul className={`basis-3/6 ${menuOpen ? 'ct-top-menu-expanded' : 'hidden'} lg:flex lg:items-center lg:justify-end lg:gap-8 
+                uppercase text-sm text-gray-500 font-medium`}>
+                    <li className='ct-top-menu-item ct-top-menu-item-active'>
                         <a href="#">Home</a>
                     </li>
                     <li className='ct-top-menu-item'>
@@ -20,14 +48,15 @@ const Header = () => {
                     <li className='ct-top-menu-item'>
                         <a href="#">Contact</a>
                     </li>
-                    <li className='ct-top-menu-item'>
+                    <li className='ct-top-menu-item '>
                         <a href="#">Guide</a>
                     </li>
                     <li className='ct-top-menu-item'>
-                        <a href="https://hoanghai-cv.link" target='blank'>HoangHai</a>
+                        <a href="https://hoanghai-cv.click" target='blank'>HoangHai</a>
                     </li>
                 </ul>
-                <ul className='basis-1/6 flex justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium'>
+
+                <ul className='basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium'>
                     <li className='ct-top-menu-item'>
                         <a href="#" className='flex items-center'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="ct-icon">
@@ -38,6 +67,12 @@ const Header = () => {
                         </a>
                     </li>
                 </ul>
+
+                <div className='basis-1/6 lg:hidden flex items-center cursor-pointer px-3 sm:px-8'>
+                    <svg onClick={handleToggle} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="ct-icon">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
             </nav>
         </header>
     );

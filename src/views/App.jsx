@@ -29,14 +29,11 @@ function App() {
   }, [windowSize]);
 
   return (
-    < >
-      <div className='font-sora  '>
-        <Header />
-        <Main />
-        <Footer />
-      </div>
-    </>
-
+    <div className='font-sora max-w-screen-xl text-base mx-auto px-8 bg-slate-200'>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   )
 }
 

@@ -2,8 +2,8 @@ import React from 'react';
 
 const FeaturedMugs = () => {
     return (
-        <div>
-
+        <div className=''>
+            Feature Mugs
         </div>
     );
 };

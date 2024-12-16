@@ -3,7 +3,7 @@ import React from 'react';
 const Story = () => {
     return (
         <>
-            <div className='w-full h-full flex justify-center items-center '>
+            <div className='flex justify-center items-center '>
                 <div className='px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center'>
                     <div className='text-2xl mb-6 leading-10 '>
                         Even the all-powerful Pointing has no control about the blind texts.

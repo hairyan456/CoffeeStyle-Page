@@ -9,7 +9,7 @@ const Slider = () => {
                     <div className='font-medium text-4xl mb-6'>Coffee Mugs</div>
                     <div className='font-medium text-lg mb-8'>The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</div>
                     <div className='flex justify-center '>
-                        <div className='uppercase bg-white text-gray-900 w-max tracking-wider py-4 px-8 text-sm font-medium cursor-pointer hover:bg-opacity-90 transition-all'>
+                        <div className='ct-button bg-white text-gray-900 w-max'>
                             Explore our products
                         </div>
                     </div>

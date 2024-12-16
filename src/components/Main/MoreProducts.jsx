@@ -2,7 +2,7 @@ import React from 'react';
 
 const MoreProducts = () => {
     return (
-        <div className='w-[95%] lg:w-[65%] mx-auto mb-16'>
+        <div className='w-[95%] xl:w-[65%] mx-auto mb-16'>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-4'>
                 <div className='ct-product-card'>
                     <div className='w-full h-[350px] bg-more-products-1 bg-cover bg-no-repeat bg-center'>

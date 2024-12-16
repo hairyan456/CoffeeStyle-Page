@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '480px',
+      },
       fontFamily: {
         sora: ["Sora", 'sans-serif'], // Thêm fontFamily vào extend
       },
@@ -39,12 +42,17 @@ export default {
         'slider-bg': `url('slider-img.jpg')`,
         'featured-mugs-1': `url('featured-mugs-1.jpg')`,
         'featured-mugs-2': `url('featured-mugs-2.jpg')`,
+
         'more-products-1': `url('more-products-1.jpg')`,
         'more-products-2': `url('more-products-2.jpg')`,
         'more-products-3': `url('more-products-3.jpg')`,
         'more-products-4': `url('more-products-4.jpg')`,
         'more-products-5': `url('more-products-5.jpg')`,
         'more-products-6': `url('more-products-6.jpg')`,
+
+        'coffee-magazine-1': `url('coffee-magazine-1.jpg')`,
+        'coffee-magazine-2': `url('coffee-magazine-2.jpg')`,
+        'coffee-magazine-3': `url('coffee-magazine-3.jpg')`,
       }
     },
     plugins: [],

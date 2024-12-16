@@ -38,7 +38,13 @@ export default {
       backgroundImage: {
         'slider-bg': `url('slider-img.jpg')`,
         'featured-mugs-1': `url('featured-mugs-1.jpg')`,
-        'featured-mugs-2': `url('featured-mugs-2.jpg')`
+        'featured-mugs-2': `url('featured-mugs-2.jpg')`,
+        'more-products-1': `url('more-products-1.jpg')`,
+        'more-products-2': `url('more-products-2.jpg')`,
+        'more-products-3': `url('more-products-3.jpg')`,
+        'more-products-4': `url('more-products-4.jpg')`,
+        'more-products-5': `url('more-products-5.jpg')`,
+        'more-products-6': `url('more-products-6.jpg')`,
       }
     },
     plugins: [],

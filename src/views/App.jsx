@@ -29,8 +29,8 @@ function App() {
   }, [windowSize]);
 
   return (
-    <div className='font-sora max-w-screen-xl text-base mx-auto px-8 bg-slate-200'>
-      <Header  />
+    <div className='font-sora max-w-screen-xl text-base mx-auto px-8 '>
+      <Header />
       <Main />
       <Footer />
     </div>

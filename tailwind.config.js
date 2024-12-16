@@ -25,6 +25,9 @@ export default {
       },
       animation: {
         slideDown: 'slideDown 0.5s ease-in-out',
+      },
+      backgroundImage: {
+        'slider-bg': `url('../../../public/slider-img.jpg')`,
       }
     },
     plugins: [],

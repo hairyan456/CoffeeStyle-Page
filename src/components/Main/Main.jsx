@@ -12,6 +12,13 @@ const Main = () => {
     return (
         <div>
             <Slider />
+            <div className='ct-subheadline'>
+                <div className='ct-subheadline-decor-line' />
+                <div className='ct-subheadline-label'>
+                    Our Coffee Stories
+                </div>
+                <div className='ct-subheadline-decor-line' />
+            </div>
             <Story />
             <div className='ct-subheadline'>
                 <div className='ct-subheadline-decor-line'>

@@ -5,6 +5,7 @@ import FeaturedMugs from './FeaturedMugs';
 import MoreProducts from './MoreProducts';
 import Magazine from './Magazine';
 import LifeStyle from './LifeStyle';
+import Parallax from './Parallax';
 
 const Main = () => {
     return (
@@ -45,6 +46,7 @@ const Main = () => {
                 </div>
             </div>
             <Magazine />
+            <Parallax />
             <div className='ct-subheadline'>
                 <div className='ct-subheadline-decor-line'>
                 </div>

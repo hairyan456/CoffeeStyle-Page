@@ -1,16 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+
+import defaultTheme from 'tailwindcss/defaultTheme';
 export default {
   darkMode: 'class',
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    // nếu custom smaller breakpoint thì dùng cách này (không thêm được vào extend)
+    screens: {
+      'xs': '480px',
+      ...defaultTheme.screens, // chỉ ghi đè mỗi xs breakpoint
+    },
     extend: {
-      screens: {
-        'xs': '480px',
-      },
       fontFamily: {
-        sora: ["Sora", 'sans-serif'], // Thêm fontFamily vào extend
+        sora: ["Sora", 'sans-serif'],
       },
       colors: {
         'coffee': {
@@ -53,6 +57,8 @@ export default {
         'coffee-magazine-1': `url('coffee-magazine-1.jpg')`,
         'coffee-magazine-2': `url('coffee-magazine-2.jpg')`,
         'coffee-magazine-3': `url('coffee-magazine-3.jpg')`,
+
+        'parallax': `url('parallax-section.jpg')`,
       }
     },
     plugins: [],

@@ -6,6 +6,7 @@ import MoreProducts from './MoreProducts';
 import Magazine from './Magazine';
 import LifeStyle from './LifeStyle';
 import Parallax from './Parallax';
+import Subscribe from './Subscribe';
 
 const Main = () => {
     return (
@@ -57,6 +58,7 @@ const Main = () => {
                 </div>
             </div>
             <LifeStyle />
+            <Subscribe />
         </div>
     );
 };

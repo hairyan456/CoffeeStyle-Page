@@ -2,7 +2,7 @@ import React from 'react';
 
 const Subscribe = () => {
     return (
-        <div>
+        <div className='h-[500px] bg-slate-400'>
 
         </div>
     );

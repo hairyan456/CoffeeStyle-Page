@@ -58,6 +58,10 @@ export default {
         'coffee-magazine-2': `url('coffee-magazine-2.jpg')`,
         'coffee-magazine-3': `url('coffee-magazine-3.jpg')`,
 
+        'life-story-1': `url('life-story-1.jpg')`,
+        'life-story-2': `url('life-story-2.jpg')`,
+        'life-story-3': `url('life-story-3.jpg')`,
+
         'parallax': `url('parallax-section.jpg')`,
       }
     },

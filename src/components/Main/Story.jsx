@@ -9,7 +9,7 @@ const Story = () => {
                         <source src='./coffee-video.mp4' type='video/mp4' />
                     </video>
                 </div>
-                <div className='basis-1/2 text-center lg:text-justify lg:pl-6'>
+                <div className='basis-1/2 text-center px-8 lg:px-0 lg:text-justify lg:pl-6'>
                     <div className='text-2xl mb-6 leading-8 tracking-wider'>
                         What is the most special coffee?
                     </div>

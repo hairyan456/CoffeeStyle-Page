@@ -43,26 +43,26 @@ export default {
         fadeIn: 'fadeIn 0.5s ease-in-out '
       },
       backgroundImage: {
-        'slider-bg': `url('slider-img.jpg')`,
-        'featured-mugs-1': `url('featured-mugs-1.jpg')`,
-        'featured-mugs-2': `url('featured-mugs-2.jpg')`,
+        'slider-bg': `url('/slider-img.jpg')`,
+        'featured-mugs-1': `url('/featured-mugs-1.jpg')`,
+        'featured-mugs-2': `url('/featured-mugs-2.jpg')`,
 
-        'more-products-1': `url('more-products-1.jpg')`,
-        'more-products-2': `url('more-products-2.jpg')`,
-        'more-products-3': `url('more-products-3.jpg')`,
-        'more-products-4': `url('more-products-4.jpg')`,
-        'more-products-5': `url('more-products-5.jpg')`,
-        'more-products-6': `url('more-products-6.jpg')`,
+        'more-products-1': `url('/more-products-1.jpg')`,
+        'more-products-2': `url('/more-products-2.jpg')`,
+        'more-products-3': `url('/more-products-3.jpg')`,
+        'more-products-4': `url('/more-products-4.jpg')`,
+        'more-products-5': `url('/more-products-5.jpg')`,
+        'more-products-6': `url('/more-products-6.jpg')`,
 
-        'coffee-magazine-1': `url('coffee-magazine-1.jpg')`,
-        'coffee-magazine-2': `url('coffee-magazine-2.jpg')`,
-        'coffee-magazine-3': `url('coffee-magazine-3.jpg')`,
+        'coffee-magazine-1': `url('/coffee-magazine-1.jpg')`,
+        'coffee-magazine-2': `url('/coffee-magazine-2.jpg')`,
+        'coffee-magazine-3': `url('/coffee-magazine-3.jpg')`,
 
-        'life-story-1': `url('life-story-1.jpg')`,
-        'life-story-2': `url('life-story-2.jpg')`,
-        'life-story-3': `url('life-story-3.jpg')`,
+        'life-story-1': `url('/life-story-1.jpg')`,
+        'life-story-2': `url('/life-story-2.jpg')`,
+        'life-story-3': `url('/life-story-3.jpg')`,
 
-        'parallax': `url('parallax-section.jpg')`,
+        'parallax': `url('/parallax-section.jpg')`,
       }
     },
     plugins: [],

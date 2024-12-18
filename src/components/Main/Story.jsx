@@ -3,7 +3,7 @@ import React from 'react';
 const Story = () => {
     return (
         <>
-            <div className='flex flex-col lg:flex-row gap-8 lg:gap-4 justify-center items-center w-[95%] xl:w-[65%] mx-auto mb-24 '>
+            <div className='flex flex-col lg:flex-row gap-8 lg:gap-4 justify-center items-center w-[95%] xl:w-[65%] mx-auto '>
                 <div className='basis-1/2'>
                     <video autoPlay loop muted className='w-full h-full object-cover min-h-[350px]'>
                         <source src='./coffee-video.mp4' type='video/mp4' />

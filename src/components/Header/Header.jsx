@@ -28,7 +28,7 @@ const Header = () => {
     }, [menuOpen]);
 
     return (
-        <header className='p-6 mx-auto'>
+        <header className='p-6 mx-auto w-full max-w-screen-xl'>
             <nav ref={menuRef} className='flex flex-row justify-between items-center relative'>
                 <div className='logo basis-2/6 text-center text-lg font-semibold cursor-pointer'>
                     CoffeeStyle

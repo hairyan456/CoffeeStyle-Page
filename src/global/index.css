@@ -24,7 +24,7 @@
     }
 
     .ct-subheadline {
-        @apply flex justify-center items-center mb-24;
+        @apply flex justify-center items-center my-20;
     }
 
     .ct-subheadline-decor-line {
@@ -39,4 +39,48 @@
         @apply text-center uppercase tracking-wider py-4 px-8 text-sm font-medium cursor-pointer hover:bg-opacity-90;
     }
 
+    /* Custom parallax */
+    #main_root {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        perspective: 2px;
+    }
+
+    .ct-parallax,
+    .ct-no-parallax {
+        @apply flex flex-col items-center justify-center relative;
+    }
+
+    .ct-parallax {
+        height: 45vh;
+    }
+
+    .ct-no-parallax {
+        @apply h-auto z-[999] bg-white;
+    }
+
+    .ct-parallax>.ct-parallax-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    @media (min-width: 1280px) {
+        .ct-parallax {
+            height: 70vh;
+            transform-style: preserve-3d;
+        }
+
+        .ct-parallax-image {
+            transform: translateZ(-1px) scale(1.5);
+
+        }
+    }
 }

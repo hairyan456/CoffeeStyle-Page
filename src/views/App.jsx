@@ -1,7 +1,14 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Header from '../components/Header/Header';
-import Main from '../components/Main/Main';
+import Slider from '../components/Main/Slider';
+import Story from '../components/Main/Story';
+import FeaturedMugs from '../components/Main/FeaturedMugs';
+import MoreProducts from '../components/Main/MoreProducts';
+import Magazine from '../components/Main/Magazine';
+import LifeStyle from '../components/Main/LifeStyle';
+import Parallax from '../components/Main/Parallax';
+import Subscribe from '../components/Main/Subscribe';
 import Footer from '../components/Footer/Footer';
 
 function App() {
@@ -29,11 +36,72 @@ function App() {
   }, [windowSize]);
 
   return (
-    <div className='font-sora max-w-screen-xl text-base mx-auto px-8 '>
-      <Header />
-      <Main />
-      <Footer />
+    <div id="main_root">
+      <div className='ct-no-parallax font-sora text-base mx-auto px-8'>
+        <Header />
+        <Slider />
+        <div className='ct-subheadline'>
+          <div className='ct-subheadline-decor-line' />
+          <div className='ct-subheadline-label'>
+            Our Coffee Stories
+          </div>
+          <div className='ct-subheadline-decor-line' />
+        </div>
+        <Story />
+        <div className='ct-subheadline'>
+          <div className='ct-subheadline-decor-line'>
+
+          </div>
+          <div className='ct-subheadline-label'>
+            Featured Mugs
+          </div>
+          <div className='ct-subheadline-decor-line'>
+
+          </div>
+        </div>
+        <FeaturedMugs />
+        <div className='ct-subheadline'>
+          <div className='ct-subheadline-decor-line'>
+
+          </div>
+          <div className='ct-subheadline-label'>
+            More Products
+          </div>
+          <div className='ct-subheadline-decor-line'>
+
+          </div>
+        </div>
+        <MoreProducts />
+        <div className='ct-subheadline'>
+          <div className='ct-subheadline-decor-line'>
+          </div>
+          <div className='ct-subheadline-label'>
+            Buy 2 mugs and get a coffee magazine free
+          </div>
+          <div className='ct-subheadline-decor-line'>
+          </div>
+        </div>
+        <Magazine />
+      </div>
+
+      <Parallax />
+
+      <div className='ct-no-parallax font-sora text-base mx-auto px-8 '>
+        <div className='ct-subheadline'>
+          <div className='ct-subheadline-decor-line'>
+          </div>
+          <div className='ct-subheadline-label'>
+            Behind the mugs, lifestyle stories
+          </div>
+          <div className='ct-subheadline-decor-line'>
+          </div>
+        </div>
+        <LifeStyle />
+        <Subscribe />
+        <Footer />
+      </div>
     </div>
+
   )
 }
 

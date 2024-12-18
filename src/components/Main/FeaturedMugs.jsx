@@ -2,7 +2,7 @@ import React from 'react';
 
 const FeaturedMugs = () => {
     return (
-        <div className='w-[95%] lg:w-[65%] mx-auto mb-24'>
+        <div className='w-[95%] lg:w-[65%] mx-auto'>
             <div className='grid lg:grid-cols-2 gap-12 lg:gap-4'>
                 <div className='ct-product-card'>
                     <div className='w-full h-[400px] sm:h-[500px] bg-featured-mugs-1 bg-cover bg-no-repeat bg-center'>
